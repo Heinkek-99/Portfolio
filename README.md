@@ -19,11 +19,11 @@ Adepte des méthodologies Agile, j'apprécie le travail en équipe, les échange
 
 ## Ce qui me caractérise
 
-✓ Polyvalence technique (C#, Java, PHP, Python)
-✓ Curiosité et veille technologique constante
-✓ Capacité à monter rapidement en compétence
-✓ Orientation résultats et pragmatisme
-✓ Esprit d'équipe et communication
+✓ Polyvalence technique (C#, Java, PHP, Python) \n
+✓ Curiosité et veille technologique constante \n
+✓ Capacité à monter rapidement en compétence \n
+✓ Orientation résultats et pragmatisme \n
+✓ Esprit d'équipe et communication \n
 
 ## Mon objectif
 
