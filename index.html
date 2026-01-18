@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKD - Développeur Full Stack & DevOps Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HKD</a>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-label">✨ Disponible pour nouvelles opportunités</div>
+                <h1 class="hero-title">HKD</h1>
+                <h2 class="hero-subtitle">Full Stack Developer & DevOps Engineer</h2>
+                <p class="hero-description">
+                    Ingénieur en informatique avec 4 ans d'expérience polyvalente : développement .NET/Java/Python, 
+                    DevOps, Data Analytics, BI, et Admin Sys. Expert en migration d'applications legacy, 
+                    architectures microservices et containerisation.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="showToast('success', 'GitHub', 'Consultez mes 39 repositories !')">
+                        💻 Voir GitHub
+                    </button>
+                    <a href="#projects" class="btn btn-secondary">
+                        🚀 Découvrir mes projets
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Années d'expérience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">39</div>
+                    <div class="stat-label">Projets GitHub</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Technologies maîtrisées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Expériences pro</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-header fade-in">
+            <div class="section-tag">// Stack technique complète</div>
+            <h2 class="section-title">Compétences & Technologies</h2>
+            <p class="section-description">
+                Expertise polyvalente couvrant le développement, DevOps, Data et Administration Système
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <div class="skill-icon"></div>
+                    Backend (.NET & Java)
+                </div>
+                <ul class="skill-list">
+                    <li>C#, ASP.NET Core, .NET 6+</li>
+                    <li>Java, Spring Boot, Spring Security</li>
+                    <li>API REST, GraphQL, gRPC</li>
+                    <li>CQRS, Event Sourcing</li>
+                    <li>Microservices Architecture</li>
+                </ul>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <div class="skill-icon"></div>
+                    DevOps & Cloud
+                </div>
+                <ul class="skill-list">
+                    <li>Docker, Kubernetes, Helm</li>
+                    <li>Azure DevOps, Jenkins, GitLab CI/CD</li>
+                    <li>Azure (AD, App Services, AKS)</li>
+                    <li>Terraform, Infrastructure as Code</li>
+                    <li>Monitoring (Prometheus, Grafana)</li>
+                </ul>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <div class="skill-icon"></div>
+                    Data & BI
+                </div>
+                <ul class="skill-list">
+                    <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                    <li>Jupyter Notebook, Data Analysis</li>
+                    <li>Power BI, Tableau</li>
+                    <li>Machine Learning (TensorFlow, OpenCV)</li>
+                    <li>ETL, Data Pipeline</li>
+                </ul>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <div class="skill-icon"></div>
+                    Frontend
+                </div>
+                <ul class="skill-list">
+                    <li>React.js, React Redux, React Native</li>
+                    <li>Vue.js, Angular</li>
+                    <li>TypeScript, JavaScript ES6+</li>
+                    <li>HTML5, CSS3, Bootstrap, Tailwind</li>
+                    <li>Progressive Web Apps (PWA)</li>
+                </ul>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <div class="skill-icon"></div>
+                    Bases de données
+                </div>
+                <ul class="skill-list">
+                    <li>SQL Server, PostgreSQL, MySQL</li>
+                    <li>Oracle, MongoDB</li>
+                    <li>Redis, Elasticsearch</li>
+                    <li>Design & Optimisation</li>
+                    <li>Migration & Performance tuning</li>
+                </ul>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <div class="skill-icon"></div>
+                    Admin Sys & Autres
+                </div>
+                <ul class="skill-list">
+                    <li>Linux (Ubuntu, CentOS), Windows Server</li>
+                    <li>Active Directory, LDAP</li>
+                    <li>Apache Kafka, MQTT, RabbitMQ</li>
+                    <li>PHP/Laravel, Node.js</li>
+                    <li>Agile (Scrum, Kanban), BPMN</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-header fade-in">
+            <div class="section-tag">// Parcours professionnel détaillé</div>
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <p class="section-description">
+                4 ans d'expérience diversifiée en développement, DevOps et gestion de projets
+            </p>
+        </div>
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="timeline-company">WeConnect</div>
+                        <div class="timeline-date">Sept 2024 - Présent</div>
+                    </div>
+                    <div class="timeline-role">Développeur .NET / DevOps Engineer</div>
+                    <p class="timeline-description">
+                        <strong>Mission 1 - Audit Technique & Amélioration Qualité :</strong> 
+                        Audit approfondi des applications métier critiques avec identification des vulnérabilités 
+                        et mise en conformité avec les standards de développement.
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Audit complet du code source : identification failles sécurité, anti-patterns et dette technique</li>
+                        <li>Refactoring majeur pour améliorer maintenabilité (réduction complexité cyclomatique de 40%)</li>
+                        <li>Implémentation suite de tests unitaires et d'intégration (couverture >80%)</li>
+                        <li>Mise en place code review systématique avec checklist qualité</li>
+                        <li>Documentation technique complète : architecture, API, guides déploiement</li>
+                        <li>Formation équipe aux bonnes pratiques SOLID et Clean Code</li>
+                    </ul>
+                    <p class="timeline-description" style="margin-top: 1.5rem;">
+                        <strong>Mission 2 - Modernisation Infrastructure IT :</strong> 
+                        Migration d'applications legacy vers architectures cloud-native et containerisées.
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Migration de 15 applications .NET Framework vers .NET 6/7 avec zéro downtime</li>
+                        <li>Containerisation complète (Docker) avec orchestration Kubernetes</li>
+                        <li>Virtualisation serveurs physiques vers containers (réduction coûts infrastructure 35%)</li>
+                        <li>Migration bases de données SQL Server avec optimisation schémas et indexes</li>
+                        <li>Mise en place monitoring distribué (Prometheus + Grafana)</li>
+                        <li>Automatisation déploiements avec Azure DevOps (CI/CD pipelines)</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">.NET Core 6/7</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Azure DevOps</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Tests (xUnit, NUnit)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="timeline-company">ICAM</div>
+                        <div class="timeline-date">Fév 2024 - Juil 2024</div>
+                    </div>
+                    <div class="timeline-role">Ingénieur Projet R&D - Robotique & IoT</div>
+                    <p class="timeline-description">
+                        Projet recherche et développement combinant robotique, IoT, communication temps réel 
+                        et simulation 3D pour ligne pédagogique industrielle.
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Intégration bras robotisé 6 axes dans chaîne production existante</li>
+                        <li>Programmation robot : Python (contrôle), Arduino (capteurs), OpenCV (vision)</li>
+                        <li>Implémentation Machine Learning pour détection défauts (TensorFlow, accuracy 92%)</li>
+                        <li>Architecture microservices pour communication inter-équipements (MQTT, Kafka)</li>
+                        <li>Développement jumeau numérique avec RViz pour simulation 3D temps réel</li>
+                        <li>Système de monitoring IoT avec dashboard temps réel (Node-RED)</li>
+                        <li>Gestion projet Agile : sprints, daily stand-ups, backlog prioritization</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Arduino C++</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">Apache Kafka</span>
+                        <span class="tech-tag">ROS</span>
+                        <span class="tech-tag">RViz</span>
+                        <span class="tech-tag">Node-RED</span>
+                        <span class="tech-tag">CAO (SolidWorks)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="timeline-company">UCAC-ICAM</div>
+                        <div class="timeline-date">Fév 2023 - Juin 2023</div>
+                    </div>
+                    <div class="timeline-role">Développeur Full Stack / DevOps</div>
+                    <p class="timeline-description">
+                        <strong>Projet 1 - Architecture DevOps IoT :</strong> 
+                        Plateforme complète pour gestion parc IoT avec authentification centralisée 
+                        et communication inter-serveurs sécurisée.
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Authentification SSO avec Azure AD + Spring Security (JWT tokens)</li>
+                        <li>Communication asynchrone via Apache Kafka (Java ↔ C# microservices)</li>
+                        <li>Containerisation applications .NET et Java pour déploiement Kubernetes</li>
+                        <li>Portail web Angular + Spring Boot avec dashboard métriques temps réel</li>
+                        <li>Application mobile React Native pour monitoring à distance</li>
+                        <li>Pipeline CI/CD complet : build, tests, analyse qualité (SonarQube), deploy</li>
+                        <li>Infrastructure as Code avec Terraform pour environnements dev/staging/prod</li>
+                    </ul>
+                    <p class="timeline-description" style="margin-top: 1.5rem;">
+                        <strong>Projet 2 - Plateforme E-commerce BDE :</strong> 
+                        Site vitrine + boutique en ligne + système gestion événements pour Bureau des Étudiants.
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Migration complète PHP 5 → PHP 7 avec refactoring (amélioration perf 60%)</li>
+                        <li>Architecture e-commerce : catalogue dynamique, gestion stocks temps réel, panier persistant</li>
+                        <li>Intégration paiements sécurisés multi-providers (CB via Stripe, PayPal)</li>
+                        <li>API RESTful Laravel avec documentation Swagger</li>
+                        <li>Frontend ReactJS responsive avec Redux pour state management</li>
+                        <li>Backend temps réel Node.js (Socket.io) pour notifications et chat</li>
+                        <li>Système auth sécurisé : roles/permissions, validation email académique</li>
+                        <li>Base MySQL optimisée : indexes, query optimization, caching (Redis)</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">C# / .NET</span>
+                        <span class="tech-tag">PHP / Laravel</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">React / React Native</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Apache Kafka</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Azure AD</span>
+                        <span class="tech-tag">PostgreSQL / MySQL</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="timeline-company">Orange Cameroun</div>
+                        <div class="timeline-date">Sept 2022 - Fév 2023</div>
+                    </div>
+                    <div class="timeline-role">Ingénieur Développeur Logiciel - DevOps</div>
+                    <p class="timeline-description">
+                        Dématérialisation du Design Authority Board (entité de validation projets). 
+                        Automatisation processus, architecture microservices et plateforme DevOps complète.
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Modélisation processus métier BPMN avec identification 12 workflows critiques</li>
+                        <li>Architecture CQRS + Event Sourcing pour audit trail complet</li>
+                        <li>Développement application web ReactJS + .NET Core avec architecture hexagonale</li>
+                        <li>Migration composants legacy .NET Framework → .NET Core 6 (15 services)</li>
+                        <li>Pipeline DevOps Azure : build, test, security scan, deploy automatisé</li>
+                        <li>Containerisation microservices avec Helm charts pour Kubernetes</li>
+                        <li>Monitoring applicatif avec Application Insights + alerting</li>
+                        <li>Réduction délais traitement de 30% grâce à l'automatisation</li>
+                        <li>Documentation technique exhaustive : ADRs, runbooks, API docs</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">.NET Core 6</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Web API</span>
+                        <span class="tech-tag">ReactJS</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">Azure DevOps</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Helm</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">BPMN</span>
+                        <span class="tech-tag">Swagger/OpenAPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 5 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="timeline-company">SpaceKola</div>
+                        <div class="timeline-date">Jan 2022 - Juil 2022</div>
+                    </div>
+                    <div class="timeline-role">Développeur PHP Full Stack</div>
+                    <p class="timeline-description">
+                        Application web de messagerie de masse (SMS groupés) avec architecture scalable 
+                        et intégrations paiement multi-providers.
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Développement Full Stack Laravel + Vue.js pour plateforme SMS</li>
+                        <li>Migration progressive PHP 5 → PHP 8 avec refactoring code legacy</li>
+                        <li>Système de queues (Laravel Queues + Redis) pour traitement asynchrone SMS</li>
+                        <li>Intégration APIs tierces : providers SMS (Twilio, Nexmo), paiement (Stripe, PayPal)</li>
+                        <li>Dashboard temps réel : consommation SMS, rapports envois, analytics</li>
+                        <li>API REST avec rate limiting et authentication (OAuth2)</li>
+                        <li>Optimisation performances : caching, lazy loading, DB query optimization</li>
+                        <li>Amélioration scalabilité : support 10K+ utilisateurs simultanés</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">PHP 8</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">OAuth2</span>
+                        <span class="tech-tag">Queues</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 6 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="timeline-company">#Ashtags</div>
+                        <div class="timeline-date">Mars 2021 - Août 2021</div>
+                    </div>
+                    <div class="timeline-role">Développeur Backend - Java/Spring</div>
+                    <p class="timeline-description">
+                        Solution web pour gestion trafic GPS marchandises en transit 
+                        (projet pilote gouvernemental avec la Douane).
+                    </p>
+                    <ul class="timeline-achievements">
+                        <li>Backend Spring Boot avec architecture microservices (GPS tracking, alerting, reporting)</li>
+                        <li>Interface web temps réel pour visualisation véhicules et trackers GPS</li>
+                        <li>Intégration APIs GPS providers pour récupération données géolocalisation</li>
+                        <li>Système d'alertes automatiques (géofencing, détection anomalies)</li>
+                        <li>Stockage sécurisé données sur serveur FTP avec encryption</li>
+                        <li>Module reporting avec export Excel et génération PDF</li>
+                        <li>Tests unitaires et d'intégration (JUnit, Mockito, coverage >75%)</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Spring Data JPA</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">Maven</span>
+                        <span class="tech-tag">JUnit</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-header fade-in">
+            <div class="section-tag">// 39 repositories sur GitHub</div>
+            <h2 class="section-title">Projets & Réalisations</h2>
+            <p class="section-description">
+                Portfolio diversifié couvrant .NET, Java, Python, Web, Data Analytics et plus encore
+            </p>
+        </div>
+
+        <div class="projects-filter">
+            <button class="filter-btn active" onclick="filterProjects('all')">Tous</button>
+            <button class="filter-btn" onclick="filterProjects('dotnet')">.NET / C#</button>
+            <button class="filter-btn" onclick="filterProjects('java')">Java</button>
+            <button class="filter-btn" onclick="filterProjects('python')">Python / Data</button>
+            <button class="filter-btn" onclick="filterProjects('web')">Web / Frontend</button>
+            <button class="filter-btn" onclick="filterProjects('devops')">DevOps</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- .NET Projects -->
+            <div class="project-card show dotnet fade-in">
+                <div class="project-header">
+                    <span class="project-category dotnet">.NET / C#</span>
+                    <h3 class="project-title">GMS School Management</h3>
+                    <p class="project-description">
+                        Système de gestion scolaire complet développé en C# avec architecture modulaire. 
+                        Gestion des élèves, professeurs, notes, présences et communication parents-école.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">.NET Core</span>
+                        <span class="tech-badge">SQL Server</span>
+                        <span class="tech-badge">WPF/WinForms</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/GMS-School-Management" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled" onclick="showToast('info', 'MVP en cours', 'Demo bientôt disponible'); return false;">
+                        🚀 Demo (bientôt)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Java Projects -->
+            <div class="project-card show java fade-in">
+                <div class="project-header">
+                    <span class="project-category java">Java / Spring</span>
+                    <h3 class="project-title">Boulder Dash Game</h3>
+                    <p class="project-description">
+                        Recréation du jeu classique Boulder Dash en Java avec pattern MVC. 
+                        Projet universitaire démontrant maîtrise POO et design patterns.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Swing</span>
+                        <span class="tech-badge">MVC</span>
+                        <span class="tech-badge">Design Patterns</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/Boulder-dash" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled" onclick="showToast('info', 'Projet archivé', 'Version jouable en développement'); return false;">
+                        🎮 Jouer (bientôt)
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card show java devops fade-in">
+                <div class="project-header">
+                    <span class="project-category java">Java / DevOps</span>
+                    <h3 class="project-title">JPU Maven Lifecycle</h3>
+                    <p class="project-description">
+                        Projet étudiant illustrant le cycle de vie Maven, build automation et 
+                        intégration continue. Mise en pratique des bonnes pratiques DevOps.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Maven</span>
+                        <span class="tech-badge">JUnit</span>
+                        <span class="tech-badge">CI/CD</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/JPU_Prosit5" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        📚 Docs
+                    </a>
+                </div>
+            </div>
+
+            <!-- Python / Data Projects -->
+            <div class="project-card show python fade-in">
+                <div class="project-header">
+                    <span class="project-category data">Python / Data Science</span>
+                    <h3 class="project-title">Sport Predict - ML Analytics</h3>
+                    <p class="project-description">
+                        Projet de Machine Learning pour prédiction de résultats sportifs. 
+                        Analyse de données, feature engineering et modèles prédictifs.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">Scikit-learn</span>
+                        <span class="tech-badge">Jupyter</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/Sport-Predict" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled" onclick="showToast('info', 'MVP en cours', 'Interface de prédiction en développement'); return false;">
+                        📊 Demo (bientôt)
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card show python fade-in">
+                <div class="project-header">
+                    <span class="project-category data">Python / Telecom Analytics</span>
+                    <h3 class="project-title">Data Telco Analysis</h3>
+                    <p class="project-description">
+                        Analyse de données télécom avec visualisations avancées. 
+                        Dashboard BI pour insights métier et aide à la décision.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Jupyter</span>
+                        <span class="tech-badge">Matplotlib</span>
+                        <span class="tech-badge">Seaborn</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/Data-Telco" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled" onclick="showToast('info', 'Dashboard BI', 'Power BI dashboard en cours'); return false;">
+                        📈 Dashboard (bientôt)
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card show python fade-in">
+                <div class="project-header">
+                    <span class="project-category python">Python / Game Dev</span>
+                    <h3 class="project-title">Pokemon Game Clone</h3>
+                    <p class="project-description">
+                        Clone de jeu Pokemon en Python avec Pygame. Gestion d'états, 
+                        animations et système de combat.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Pygame</span>
+                        <span class="tech-badge">OOP</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/pokemon" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        🎮 Jouer
+                    </a>
+                </div>
+            </div>
+
+            <!-- Web Projects -->
+            <div class="project-card show web fade-in">
+                <div class="project-header">
+                    <span class="project-category web">Blockchain / Web3</span>
+                    <h3 class="project-title">Block - Blockchain Project</h3>
+                    <p class="project-description">
+                        Implémentation d'une blockchain simple avec smart contracts. 
+                        Exploration des technologies Web3 et cryptographie.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Solidity</span>
+                        <span class="tech-badge">Web3.js</span>
+                        <span class="tech-badge">Ethereum</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/Block" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled" onclick="showToast('info', 'DApp en cours', 'Interface Web3 en développement'); return false;">
+                        🌐 DApp (bientôt)
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card show web fade-in">
+                <div class="project-header">
+                    <span class="project-category web">React / TypeScript</span>
+                    <h3 class="project-title">Frontend Modern SPA</h3>
+                    <p class="project-description">
+                        Application Single Page moderne avec React et TypeScript. 
+                        Architecture scalable et bonnes pratiques frontend.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Redux</span>
+                        <span class="tech-badge">Styled Components</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/frontend" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        🚀 Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card show web fade-in">
+                <div class="project-header">
+                    <span class="project-category web">PHP / Laravel</span>
+                    <h3 class="project-title">Web API - Laravel Backend</h3>
+                    <p class="project-description">
+                        API RESTful complète avec Laravel. Authentification JWT, 
+                        documentation Swagger et tests unitaires.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Swagger</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/web_api" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        📖 API Docs
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card show web fade-in">
+                <div class="project-header">
+                    <span class="project-category web">Laravel / SMS</span>
+                    <h3 class="project-title">Devups - SMS Bundle</h3>
+                    <p class="project-description">
+                        Bundle Laravel pour intégration SMS. Abstraction de multiples 
+                        providers avec gestion de files d'attente.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">Queues</span>
+                        <span class="tech-badge">API Integration</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/Devups" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        📦 Package
+                    </a>
+                </div>
+            </div>
+
+            <!-- DevOps / Admin Sys Projects -->
+            <div class="project-card show devops fade-in">
+                <div class="project-header">
+                    <span class="project-category dotnet">DevOps / Documentation</span>
+                    <h3 class="project-title">Assets IT - Doc Repository</h3>
+                    <p class="project-description">
+                        Référentiel de documentation pour applications IT. 
+                        Architecture, déploiement, runbooks et procédures.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Documentation</span>
+                        <span class="tech-badge">Markdown</span>
+                        <span class="tech-badge">Architecture</span>
+                        <span class="tech-badge">Best Practices</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/Assets-IT" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        📚 Docs
+                    </a>
+                </div>
+            </div>
+
+            <!-- CV Generator Projects -->
+            <div class="project-card show web fade-in">
+                <div class="project-header">
+                    <span class="project-category web">JavaScript / Automation</span>
+                    <h3 class="project-title">GenCV - CV Generator</h3>
+                    <p class="project-description">
+                        Générateur de CV automatisé avec templates personnalisables. 
+                        Export PDF, support multi-langues.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">HTML/CSS</span>
+                        <span class="tech-badge">PDF Generation</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/GenCV" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled" onclick="showToast('info', 'App Web', 'Interface web en développement'); return false;">
+                        ✨ Essayer (bientôt)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Education Projects -->
+            <div class="project-card show web java fade-in">
+                <div class="project-header">
+                    <span class="project-category web">EdTech / Platform</span>
+                    <h3 class="project-title">Teach-r - Education Platform</h3>
+                    <p class="project-description">
+                        Plateforme d'apprentissage en ligne avec gestion de cours, 
+                        quiz interactifs et suivi de progression.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Full Stack</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/Teach-r" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        🎓 Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card show java fade-in">
+                <div class="project-header">
+                    <span class="project-category java">Java / School Management</span>
+                    <h3 class="project-title">Prudence - School System</h3>
+                    <p class="project-description">
+                        Système de gestion scolaire en Java avec interface Swing. 
+                        Gestion complète du cycle scolaire.
+                    </p>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Swing</span>
+                        <span class="tech-badge">JDBC</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Heinkek-99/prudence" target="_blank" class="project-link link-github">
+                        🔗 GitHub
+                    </a>
+                    <a href="#" class="project-link link-demo disabled">
+                        📱 Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://github.com/Heinkek-99?tab=repositories" target="_blank" class="btn btn-primary">
+                🔍 Voir tous les 39 projets sur GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-header fade-in">
+            <div class="section-tag">// Let's connect</div>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-description">
+                Intéressé par mon profil ? N'hésitez pas à me contacter
+            </p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card fade-in" onclick="window.open('https://github.com/Heinkek-99', '_blank')">
+                <div class="contact-icon">💻</div>
+                <div class="contact-title">GitHub</div>
+                <div class="contact-info">
+                    <a href="https://github.com/Heinkek-99" target="_blank" class="contact-link">@Heinkek-99</a>
+                </div>
+            </div>
+            <div class="contact-card fade-in" onclick="showToast('info', 'Email', 'Contactez-moi à kengneheidy@yahoo.fr')">
+                <div class="contact-icon>📧</div>
+                <div class="contact-title">Email</div>
+                <div class="contact-info">
+                    <span class="contact-link">kengneheidy@yahoo.fr</span>
+                </div>
+            </div>
+            <div class="contact-card fade-in" onclick="showToast('success', 'LinkedIn', 'Connectons-nous !')">
+                <div class="contact-icon">💼</div>
+                <div class="contact-title">LinkedIn</div>
+                <div class="contact-info">
+                    <span class="contact-link">linkedin.com/in/heidy-kengne</span>
+                </div>
+            </div>
+            <div class="contact-card fade-in" onclick="showToast('info', 'Localisation', 'Actuellement en France')">
+                <div class="contact-icon">📍</div>
+                <div class="contact-title">Localisation</div>
+                <div class="contact-info">France</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">© 2026 HKD - Full Stack Developer & DevOps Engineer</p>
+            <p class="footer-text">3 ans d'expérience | 39 projets GitHub | Expertise .NET, Java, Python, DevOps</p>
+            <div class="footer-links">
+                <a href="https://github.com/Heinkek-99" target="_blank" class="footer-link">GitHub</a>
+                <span class="footer-link" onclick="showToast('success', 'CV', 'Téléchargement disponible prochainement')">Télécharger CV</span>
+                <span class="footer-link" onclick="showToast('info', 'Mentions légales', 'Section en préparation')">Mentions légales</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast" class="toast">
+        <div class="toast-icon">✓</div>
+        <div class="toast-content">
+            <div class="toast-title" id="toast-title">Succès</div>
+            <div class="toast-message" id="toast-message">Message</div>
+        </div>
+        <button class="toast-close" onclick="hideToast()">×</button>
+    </div>
+ 
+    //script
+    <script src="script.js"></script>
+</body>
+</html>
