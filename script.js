@@ -93,14 +93,14 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const fadeElements = document.querySelectorAll('.fade-in');
-//     fadeElements.forEach(el => observer.observe(el));
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => observer.observe(el));
 
-//     setTimeout(() => {
-//         showToast('success', 'Bienvenue !', '39 projets à découvrir - Expert .NET, Java & DevOps');
-//     }, 1000);
-// });
+    setTimeout(() => {
+        showToast('success', 'Bienvenue !', '39 projets à découvrir - Expert .NET, Java & DevOps');
+    }, 1000);
+});
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
