@@ -198,7 +198,7 @@
                         <li>Migration de 15 applications .NET Framework vers .NET 6/7 avec zéro downtime</li>
                         <li>Containerisation complète (Docker) avec orchestration Kubernetes</li>
                         <li>Virtualisation serveurs physiques vers containers (réduction coûts infrastructure 35%)</li>
-                        <li>Migration bases de données SQL Server avec optimisation schémas et indexes</li>
+                        <li>Migration bases de données MySQL avec optimisation schémas et indexes</li>
                         <li>Mise en place monitoring distribué (Prometheus + Grafana)</li>
                         <li>Automatisation déploiements avec Azure DevOps (CI/CD pipelines)</li>
                     </ul>
@@ -241,6 +241,7 @@
                         <span class="tech-tag">Arduino C++</span>
                         <span class="tech-tag">OpenCV</span>
                         <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Ubuntu 22</span>
                         <span class="tech-tag">MQTT</span>
                         <span class="tech-tag">Apache Kafka</span>
                         <span class="tech-tag">ROS</span>
@@ -278,7 +279,6 @@
                         Site vitrine + boutique en ligne + système gestion événements pour Bureau des Étudiants.
                     </p>
                     <ul class="timeline-achievements">
-                        <li>Migration complète PHP 5 → PHP 7 avec refactoring (amélioration perf 60%)</li>
                         <li>Architecture e-commerce : catalogue dynamique, gestion stocks temps réel, panier persistant</li>
                         <li>Intégration paiements sécurisés multi-providers (CB via Stripe, PayPal)</li>
                         <li>API RESTful Laravel avec documentation Swagger</li>
@@ -855,10 +855,10 @@
                 <div class="contact-icon">💼</div>
                 <div class="contact-title">LinkedIn</div>
                 <div class="contact-info">
-                    <span class="contact-link">linkedin.com/in/heidy-kengne</span>
+                    <a href="https://linkedin.com/in/heidy-kengne" target="_blank"  class="contact-link">heidy-kengne</a>
                 </div>
             </div>
-            <div class="contact-card fade-in" onclick="showToast('info', 'Localisation', 'Actuellement en France')">
+            <div class="contact-card fade-in" onclick="showToast('info', 'Localisation', 'Actuellement en Île-de-France')">
                 <div class="contact-icon">📍</div>
                 <div class="contact-title">Localisation</div>
                 <div class="contact-info">France</div>
@@ -874,7 +874,7 @@
             <div class="footer-links">
                 <a href="https://github.com/Heinkek-99" target="_blank" class="footer-link">GitHub</a>
                 <span class="footer-link" onclick="showToast('success', 'CV', 'Téléchargement disponible prochainement')">Télécharger CV</span>
-                <span class="footer-link" onclick="showToast('info', 'Mentions légales', 'Section en préparation')">Mentions légales</span>
+                <!-- <span class="footer-link" onclick="showToast('info', 'Mentions légales', 'Section en préparation')">Mentions légales</span> -->
             </div>
         </div>
     </footer>
@@ -888,8 +888,7 @@
         </div>
         <button class="toast-close" onclick="hideToast()">×</button>
     </div>
- 
-    //script
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
